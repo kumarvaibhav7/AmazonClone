@@ -1,0 +1,38 @@
+<div style="font-weight: 800; font-size: 200%; color: #191d21; background-color: #ff9900; padding: 1% 2%;">
+    Your cart
+</div>
+<div *ngFor="let pro of cart">
+    <div *ngIf="pro.quantity>0">
+        <table style="margin:10px 0; width: 100%; text-align: center; background-color: #f2f2f2;">
+            <tr>
+                <td style="margin-left: 5%;" rowspan="2">
+                    <img style="height: 150px; width:120px;" src="{{pro.image}}" alt="Product image">
+                </td>
+                <td colspan="2">
+                    <div style="font-weight: 900; font-size: 150%;">{{pro.pname}}</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Quantity: {{pro.quantity}}</span>
+                </td>
+                <td>
+                    <button class="btn btn-primary btn-sm rounded-pill" style="color: black; background-color: #ff9900;"
+                        (click)="removecart(pro)">Remove from Cart</button>
+                </td>
+                <td>
+                    <div style="font-weight: 900;">Cost: {{pro.quantity*pro.price|currency:'INR'}}</div>
+                </td>
+            </tr>
+        </table>
+        <hr>
+    </div>
+</div>
+<div style="padding:100px 0;">
+    <div style="font-weight: 900; font-size: 170%; float: right; margin-right: 7%;">
+        Total: {{dataservice.total|currency:'INR'}}
+        <button style="color: black; background-color: #ff9900;" class="btn btn-primary mx-4 rounded-pill"
+            [routerLink]="['/'+this.route.snapshot.pathFromRoot[1].url[0].path+'/checkout']"><i class="fa-solid fa-forward"></i>
+            Proceed to buy</button>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+.mainLogo{
+    margin: 2% 0;
+    text-align: center;
+}
+/* .card-header{
+    text-align: center;
+} */
+.loginformelement{
+    margin: 10px auto;
+}
+.form-control{
+    margin: 4px auto;
+    border-style: inset;
+    border-width: 2px;
+}
+.card{
+    margin: 0 35%;
+    font-family: "Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+
+}
+.logo{
+    height: 30px;
+    width:100px;
+}

@@ -1,0 +1,27 @@
+<div style="background-color: #f2f2f2;">
+    <div style="font-weight: 800; font-size: 200%; color: #191d21; background-color: #ff9900; padding: 1% 2%;">
+        Search results
+    </div>
+    <div style="background-color: #f2f2f2;">
+        <div style="background-color: #f2f2f2; padding:1% 1%; position: absolute;">
+            <div *ngFor="let item of products | filter:dataservice.searchString"
+                style="display: inline-block; margin-bottom: 20px;" class="text-center">
+                <div class="card" style=" width: 12rem; height: 370px; margin-left: 45px;">
+                    <div class="text-center">
+                        <img class="card-img-top" src="{{item.image}}" alt="Card image cap"
+                            style="height: 200px; width:180px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size:medium;">{{item.pname}}</h5>
+                        <p class="card-text" style="margin-top: 20px; font-weight: 500;">{{item.price|currency:'INR'}}
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a style="color: #16191d; background-color: #ff9900;" (click)="addtocart(item)"
+                            class="btn btn-primary rounded-pill">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

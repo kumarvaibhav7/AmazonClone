@@ -1,0 +1,17 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" [routerLink]="['home']">
+        <img src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" width="80" height="30" alt="">
+    </a>
+    <div style="margin: 0 auto; width: 500px; margin-left: 150px;" class="input-group">
+        <input type="search" class="form-control rounded col-md-3" [(ngModel)]="dataservice.searchString" placeholder="Search" aria-label="Search"
+            aria-describedby="search-;ddon" />
+        <button type="button" class="btn" style="background-color: #ff9900; color: black;" [routerLink]="['search']">search</button>
+    </div>
+    <button class="btn btn-sm btn-dark" [routerLink]="['cart']" style="margin-left:75%;"><i
+            class="fa-solid fa-cart-shopping"></i> Cart</button>
+    <button class="btn btn-sm btn-dark" [routerLink]="['profile']"><i class="fa-solid fa-user"></i> Profile</button>
+    <button class="btn btn-sm btn-dark" (click)="canlogout()"><i class="fa-solid fa-arrow-right-from-bracket"></i>
+        Logout</button>
+</nav>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,35 @@
+<div>
+  <ngb-carousel id="homecarousel" *ngIf="true" [showNavigationArrows]="showArrows"
+    [showNavigationIndicators]="showIndicators" [interval]="3000">
+    <ng-template ngbSlide *ngFor="let image of carouselimages">
+      <div class="picsum-img-wrapper">
+        <img style="height: 30%; width:100%;" [src]="image" alt="Random slide">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <br>
+  <div class="product-div"></div>
+  <div *ngFor="let category of categories">
+    <div class="card border-0" style="margin-bottom: 20px;">
+      <h4 class="card-header" style="font-size: larger; font-weight: 600; color: black; background-color: #ff9900; margin-bottom: 0;">{{category}}</h4>
+      <div class="card-body" style="background-color: #f2f2f2">
+        <div class="container" style="margin:0 1%;">
+          <div *ngFor="let i of products" class="text-center" style="display: inline-block;">
+            <div *ngIf="i.category==category" class="card" style="width: 12rem; height: 370px; margin-right: 50px;">
+              <div class="text-center">
+                <img class="card-img-top" src="{{i.image}}" alt="Card image cap" style="height: 200px; width:180px;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="font-size:medium;">{{i.pname}}</h5>
+                <p class="card-text" style="margin-top: 20px; font-weight: 500;">{{i.price|currency:'INR'}}</p>
+              </div>
+              <div class="card-footer">
+                <a style="color: #16191d; background-color: #ff9900;" (click)="addtocart(i)" class="btn btn-primary rounded-pill">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

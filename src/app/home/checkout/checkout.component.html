@@ -1,0 +1,58 @@
+<div style="font-weight: 800; font-size: 200%; color: #191d21; background-color: #ff9900; padding: 1% 2%;">
+    Checkout
+</div>
+
+<div *ngIf="!pflag">
+    <div style="margin-bottom: 10px;">
+        <div style="font-weight: 800; font-size: 20px; margin-top: 5px; margin-left: 35%;">Shipping Address: </div>
+        <div style="font-weight: 600; margin-left: 45%; font-size: larger;">Name: {{currentuser.name}}</div>
+        <div style="margin-left: 45%; font-size: medium;">
+            <div style="font-weight: 600;">Address: </div>
+            {{currentuser.address}}
+        </div>
+        <div style="margin-left: 45%; font-size: medium;">
+            <div style="font-weight: 600;">Contact No: </div>
+            {{currentuser.phone}}
+        </div>
+    </div>
+    <div class="card border-0" style="margin-bottom: 20px;">
+        <h4 class="card-header"
+            style="font-size: larger; font-weight: 600; color: black; background-color: #ff9900; margin-bottom: 0;">Cart
+        </h4>
+        <div class="card-body" style="background-color: #f2f2f2">
+            <div class="container" style="margin:0 1%;">
+                <div *ngFor="let i of cart" class="text-center" style="display: inline-block;">
+                    <div *ngIf="i.quantity>0" class="card" style="width: 12rem; height: 330px; margin-right: 50px;">
+                        <div class="text-center">
+                            <img class="card-img-top" src="{{i.image}}" alt="Card image cap"
+                                style="height: 200px; width:180px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size:medium;">{{i.pname}}</h5>
+                            <p class="card-text" style="margin-top: 20px; font-weight: 500;">Cost:
+                                {{i.price*i.quantity|currency:'INR'}}<br>Quantity: {{i.quantity}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="card border-0" style="margin:0 auto 20px auto; width: 50%;">
+        <h4 class="card-header"
+            style="font-size: larger; font-weight: 600; color: black; background-color: #ff9900; margin-bottom: 0;">
+            Payment:
+        </h4>
+        <div class="card-body text-center" style="background-color: #f2f2f2">
+            <div style="font-weight: 600; font-size:large">UPI: <input type="text" name="upi"></div>
+            <br>
+            <br>
+            <button (click)="paymentflag()" class="btn btn-primary rounded-pill" style="
+           background-color: #ff9900; color: black;">Total: {{dataservice.total|currency:'INR'}}</button>
+        </div>
+    </div>
+</div>
+<div *ngIf="pflag" class="text-center">
+        <div style="font-weight: 800; font-size:larger">Payment Processing</div>
+        <img width="400px" height="300px" src="https://cdn.dribbble.com/users/915787/screenshots/13875171/media/fcdafdbed338b151db69b39599d2f5a6.gif" alt="Processing Payment">
+</div>

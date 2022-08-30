@@ -1,0 +1,21 @@
+.d-block {
+    height: 30%;
+    width: 100%;
+}
+
+body {
+    background-color: darkgray;
+}
+
+.container {
+    display: flex;
+}
+
+#homecarousel {
+    width: 100%;
+    position: absolute;
+}
+
+.product-div {
+    margin-top: 20%;
+}

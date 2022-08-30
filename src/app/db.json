@@ -1,0 +1,146 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "photo": "/assets/userimage.png",
+      "mail": "vaibhav@gmail.com",
+      "password": "12345678",
+      "name": "Kumar Vaibhav",
+      "address": "Brillio, Bren optimus",
+      "phone": "1234567890"
+    },
+    {
+      "id": "2",
+      "photo": "/assets/userimage.png",
+      "mail": "dev@gmail.com",
+      "password": "12345678",
+      "name": "Dev Patel",
+      "address": "Brillio, Bren optimus",
+      "phone": "1234567890"
+    },
+    {
+      "id": "3",
+      "photo": "/assets/userimage.png",
+      "mail": "akhil@gmail.com",
+      "password": "12345678",
+      "name": "Akhil Kumar",
+      "address": "Brillio, Bren optimus",
+      "phone": "1234567890"
+    },
+    {
+      "id": "4",
+      "photo": "/assets/userimage.png",
+      "mail": "aviraj@gmail.com",
+      "password": "12345678",
+      "name": "Aviraj",
+      "address": "Brillio, Bren optimus",
+      "phone": "1234567890"
+    }
+  ],
+  "carousel": [
+    {
+      "image": "https://images-eu.ssl-images-amazon.com/images/G/31/prime/ACQ/PD22/GW/primelastpc2._CB632251679_.jpg"
+    },
+    {
+      "image": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/Meghana/PrimeDay/DB/Neo/D50315507_PD_iQOO_Neo_6_Color_Variant_-_Design_SIM_PC_Hero_3000x1200._CB631881288_.jpg"
+    },
+    {
+      "image": "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wearables/PD/Main/Event/GW/CEPC_Electronics-GW-Graphics_PD22_3000x1200_Smartwatch._CB632026815_.jpg"
+    },
+    {
+      "image": "https://images-eu.ssl-images-amazon.com/images/G/31/img21/soumya/OHL/HnK/PD22/Graphics/Hero/3000x1200_ends-tonight._CB632251703_.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "quantity": 0,
+      "pname": "Oneplus Nord 2T 5G",
+      "price": "33999",
+      "image": "https://m.media-amazon.com/images/I/617MPEZB5mL._SX679_.jpg",
+      "about": "Camera: 50MP Main Camera with Sony IMX766 and OIS, 8MP Ultrawide Camera with 120 degree FOV and 2MP mono lens with Dual LED Flash; 32MP Front (Selfie) Camera with Sony IMX615",
+      "category": "Smartphone"
+    },
+    {
+      "id": 2,
+      "quantity": 0,
+      "pname": "iQOO vivo Z6 Pro 5G",
+      "price": "23999",
+      "image": "https://m.media-amazon.com/images/I/61E4zA32FrL._SX522_.jpg",
+      "about": "Liquid Cooling system intelligently sense the heat source and adapt the optimal cooling solution, thereby effectively cool down the phone and reduce the CPU temperature by 12 degrees and surface temperature by 3 degree.",
+      "category": "Smartphone"
+    },
+    {
+      "id": 3,
+      "quantity": 1,
+      "pname": "OnePlus 10 Pro 5G",
+      "price": "71999",
+      "image": "https://m.media-amazon.com/images/I/618hqM-yxtL._SX679_.jpg",
+      "about": "Display Features: Nature tone display, Video colour enhancer, Colour personalization, Colour vision enhancement, Auto brightness, Manual brightness, Screen colour temperature, Bright HDR video mode, Night Mode, Multi-brightness colour calibration, Vibrant Colour Effect Pro, Ultra high resolution video",
+      "category": "Smartphone"
+    },
+    {
+      "id": 4,
+      "quantity": 0,
+      "pname": "Xiaomi 12 Pro | 5G",
+      "price": "62999",
+      "image": "https://m.media-amazon.com/images/I/71vNgTH3MzL._SX679_.jpg",
+      "about": "The Pro-grade triple 50MP camera array unleashes the true power of a triple-camera setup. The large 50MP Sony IMX707 captures upto 120% more light. The 50MP Telephoto & 50MP Ultra-wide enable you to enjoy a top-class cinematography experience. The 32MP front facing camera is segment best.",
+      "category": "Smartphone"
+    },
+    {
+      "id": 5,
+      "quantity": 0,
+      "pname": "Samsung Galaxy M53 5G",
+      "price": "24999",
+      "image": "https://m.media-amazon.com/images/I/81yL2dXKTHL._SX679_.jpg",
+      "about": "6.7-inch Super AMOLED Plus Display, FHD+ resolution, 1080x2400 pixels with 120Hz Refresh Rate.",
+      "category": "Smartphone"
+    },
+    {
+      "id": 6,
+      "quantity": 0,
+      "pname": "DSC Condor Cricket Batting Legguard",
+      "price": "4251",
+      "image": "https://m.media-amazon.com/images/I/719E+fNycRS._SX466_.jpg",
+      "about": "Moulded Professional Legguard",
+      "category": "Sports"
+    },
+    {
+      "id": 7,
+      "quantity": 0,
+      "pname": "Cosco Light Cricket Tennis Ball",
+      "price": "389",
+      "image": "https://m.media-amazon.com/images/I/81LgEbaS+sL._SX466_.jpg",
+      "about": "Material rubber covered with felt",
+      "category": "Sports"
+    },
+    {
+      "id": 8,
+      "quantity": 0,
+      "pname": "Jaspo Stealth Heavy Duty Bat",
+      "price": "389",
+      "image": "https://m.media-amazon.com/images/I/71ijgbTdf6L._SX466_.jpg",
+      "about": "Height and Width: Jaspo Slog Cricket Bat having 34 inches height, 4.5 “inches width and 2.2 inches thickness. This Bat is Waterproof and having superior quality. Slog Bat comes in full Adult size. This bat is environment friendly and easy to carry anywhere.",
+      "category": "Sports"
+    },
+    {
+      "id": 9,
+      "quantity": 0,
+      "pname": "Whitedot Falcon Duffle Cricket Kitbag",
+      "price": "1199",
+      "image": "https://m.media-amazon.com/images/I/817NWNZKiEL._SX679_.jpg",
+      "about": "Premium duffle bag made of high-quality material with full foam padding.",
+      "category": "Sports"
+    },
+    {
+      "id": 10,
+      "quantity": 0,
+      "pname": "Woodpecker Cricket Thigh pad",
+      "price": "999",
+      "image": "https://m.media-amazon.com/images/I/81UckkX9rGL._SY679_.jpg",
+      "about": "The Woodpecker has been thoughtfully designed as an integrated dual thigh guard to ensure adequate protection for your inner and outer thigh regions",
+      "category": "Sports"
+    }
+  ]
+}
